@@ -11,7 +11,7 @@ class TodoDto {
     // Assert the map contains the keys  title and completed with the right data types
 
     // Return the right todo object by reading the json map
-    return Todo(id: "fake", title: "fake", completed: false);
+    return Todo(id: id, title: json['title'], completed: json['completed']);
   }
 
   static Map<String, dynamic> toJson(Todo todo) {
@@ -45,7 +45,8 @@ void main() {
   final List<Todo> todos = data.entries.map((entry) {
     final id = entry.key;
     final json = entry.value as Map<String, dynamic>;
-
     return TodoDto.fromJson(id, json);
   }).toList();
+
+  print(todos);
 }

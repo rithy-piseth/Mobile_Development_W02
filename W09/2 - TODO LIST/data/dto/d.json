@@ -1,0 +1,16 @@
+{
+  "todos": {
+    "todo1": {
+      "title": "Buy groceries",
+      "completed": false
+    },
+    "todo2": {
+      "title": "Finish Flutter homework",
+      "completed": true
+    },
+    "todo3": {
+      "title": "Call the dentist",
+      "completed": false
+    }
+  }
+}
